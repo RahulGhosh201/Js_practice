@@ -1,0 +1,35 @@
+//Arrays
+let groceries=['apple','pear','banana']
+console.log(groceries[0])
+groceries.push('guava')
+console.log(groceries.slice(1,2))//slice() method works as if a slice of a cake
+groceries.indexOf('banana')//2
+groceries.length //4
+
+
+
+
+//objects
+
+egulo holo normal just call-->
+const person={
+	name:'Leonardo',
+	shirt:'White'
+}
+console.log(person.name)  OR console.log(person['name'])
+console.log(person.shirt)  OR console.log(person['shirt'])
+
+
+call through function-->
+const introducer=(name,shirt)=>
+{
+    const person={
+        name:name,
+        shirt:shirt
+    }
+    const intro=`Hi my name is ${person.name} & my shirt is ${person.shirt}`
+    return intro
+}
+
+console.log(introducer('rahul','black'))
+${person.name}---------->introducer->person->name i.e rahul
