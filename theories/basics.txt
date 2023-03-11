@@ -1,0 +1,405 @@
+console.log('hello world')
+
+varables...................
+name='rahul ghosh'
+var greeting='hello'//outdated not reccomended
+let greeting='hello'//reccomended
+const greeting='hello'//unchangable
+
+prompt.................
+eta console e user r theke data nite help kore
+food=prompt('how much was the food?')
+tipPercentage=prompt('tip%?')
+tipAmount=food*tipPercentage/100
+total=food+tipAmount///but ekhane numbers hisabe na nie string hisabe nie6e tai concatenate hye jabe mane'100+20=10020' dekhabe
+
+consol.log(total)
+
+
+alert.................
+console e output show korate or generally kono notification at a definite time e show korate kaje lage
+alert(tipAmount)//it will pop up on the top of the screen
+
+//amra generally prompt use korina ,html die forms create kore user r theke data nie thaki
+
+typecasting..................(string to number using Number())
+prompt r return gulo string ,but calculation r jnno amader number chai tai Number(food) korle string to number convert hye jbe
+or we can write food=Number(prompt('how much was the food?'))
+
+console.log..........
+x=10
+if we write
+	console.log(x)//10
+	console.log('x: ',x)//x: 10
+	
+	
+	
+Data Types...........
+1.strings-------'rahul',"rahul"//no diff b/w ' ' & " "
+2.Numbers-------10,2.5
+3.arrays[]
+4.objects{}
+5.boolean--------true/false
+
+	let weather=prompt('How is the weather?')
+	//let weather='rainy'
+	if(weather=='rainy'){
+		console.log('Grab your umbrealla')
+	}else{
+		console.log('Wear your sunglasses')
+}
+
+
+math operators...............
++,-,*,**,/,%
+
+
+
+math methods..........
+Math.floor(110.25)//110//rounds down
+Math.ceil(110.25)//111//rounds up
+Math.random()//gives a decimal number b/w 0 & 1
+Math.random()*3//gives a decimal number b/w 0 & 3
+to turn a random number like 2.72013 into the closest lower integer?//Math.floor(Math.random()*3)///eta randomly 0,1,2 die thakbe 
+//Math.ceil(Math.random()*3)///eta randomly 1,2,3 die thakbe
+
+
+conditional operators...............
+<,>,==,===,<=,>=,!=,!==
+
+
+
+baby weather app....................
+let weather=prompt('How is the weather?')
+	//let weather='rainy'
+	if(weather=='rainy'){
+		console.log('Grab your umbrealla')
+	}else{
+		console.log('Wear your sunglasses')
+	}
+
+
+
+functios()..........................
+1.without argument
+function sayMyName()
+{
+console.log('rahul ghosh')
+}
+sayMyName()//rahul ghosh
+
+
+2.with argument
+let name=prompt('Enter your name:')
+function sayMyName(name)
+{
+console.log(name)
+}
+sayMyName(name)
+
+
+
+3.functiongreeting(name)
+{
+console.log('Hi '+name+',Nice to meet you')  OR greet=`hi ${name},nice to meet you` consol.log(greet)
+}
+greeting(Rahul)//Hi Rahul,Nice to meet you
+
+`${varName}---->it's called string interpolation
+`${varName} generally used console e log korar time e 
+like-
+function greeting(name)
+{
+	greet=`hi ${name},nice to meet you!`
+	console.log(greet)
+}
+
+greeting('Rahul Ghosh')
+
+
+
+function sum(a,b)
+{
+    return a+b
+}
+console.log(sum(1,2))
+num=sum(5,7)
+console.log(num)
+
+function calculateTotal(food,tip)
+{
+    tipPercentage=tip/100
+    tipAmount=food*tipPercentage
+    total=sum(food,tipAmount)
+    return total
+}
+x=calculateTotal(1000,5)
+console.log(`Total amount: ${x}`)
+
+
+
+
+arrow function with impplicit return..................
+//ES6
+//Arrow Functions=>
+
+const sum=(a,b)=>a+b//ekhane function declared korar dorkar nei
+ 
+
+arrow function with explicit return..................
+
+const SumArrow=(a,b)=>{
+	return a+b
+}
+
+
+
+//Arrays
+let groceries=['apple','pear','banana']
+console.log(groceries[0])
+groceries.push('guava')
+console.log(groceries.slice(1,2))//slice() method works as if a slice of a cake
+groceries.indexOf('banana')//2
+groceries.length //4
+
+
+
+
+//objects
+
+egulo holo normal just call-->
+const person={
+	name:'Leonardo',
+	shirt:'White'
+}
+console.log(person.name)  OR console.log(person['name'])
+console.log(person.shirt)  OR console.log(person['shirt'])
+
+
+call through function-->
+const introducer=(name,shirt)=>
+{
+    const person={
+        name:name,
+        shirt:shirt
+    }
+    const intro=`Hi my name is ${person.name} & my shirt is ${person.shirt}`
+    return intro
+}
+
+console.log(introducer('rahul','black'))
+${person.name}---------->introducer->person->name i.e rahul
+
+
+.............................................................................
+
+
+//loops
+const fruits=['pear','banana','orange',];
+console.log(fruits[1]);
+by this we can access the elements of the array one by one but to print out all
+of them at once we have to use the concept of looping
+
+For loop------->
+for(let i=0;i<fruits.length;i++){
+	console.log(fruits[i])
+}//it will print all the elements present in the fruits array
+fruits.length -------->determines the array length 
+......advanced syntax of a for loop
+for(const fruit of fruits)
+{
+ console.log(fruit)
+}//here we don't have to worry about indices inside the for loop
+
+1.Print all the elements in the array
+const numbers=[1,2,3,4,5,6,7,8]
+for(const i of numbers)
+{
+	console.log(i)
+}
+
+
+2.Double all the numbers
+const numbers=[1,2,3,4,5,6,7,8]
+for(const i of numbers)
+{
+	console.log(2*i)
+}
+
+
+3.push elements & printing that array
+const ans=[]//initializing an empty array
+for(const num of numbers)
+{
+	ans.push(num)
+}
+for(const a of ans)
+{
+	console.log(a)
+}
+
+console.log(ans)
+
+const double=(numbers)=>
+{
+	let result=[]
+	for(const number of numbers){
+		result.push(number*2)
+	}
+	return ans
+}
+
+consol.log(double(numbers[]))
+
+4.Print all the letters in a sentence
+const Letters=()=>
+{
+	const phrase="Rahul Ghosh"
+	for(const letter of phrase)
+	{
+		console.log(letter)
+	}
+}
+
+Letters()
+
+//to determine how many letters are present in a word 
+for(const letter in phrase)
+{
+	console.log(Numer(letter)+1)
+}
+......OR...... 
+let result=0;
+for(const index in phrase)
+{
+	result=Numebr(index)+1
+}
+.....OR........
+const howManyLetters=(phrase)=>
+{
+	return{result:phrase.length}
+}
+const phrase='I am Rahul Ghosh'
+console.log(howManyLetters(phrase))
+
+
+
+5.Sum all the numbers
+const sumArray=(num)=>
+{
+    let sum=0
+    for(const n of num)
+    {
+        sum=sum+n
+    }
+    return {sum}
+}
+let num=[10,20,3,04,50]
+console.log(sumArray(num))
+
+6.Find the max element
+const max=(num)=>
+{
+    let result=num[0]
+    for(const n of num)
+    {
+        if(result<n)
+        {
+            result=n
+        }
+
+    }
+    return {result}
+}
+
+let num=[10,20,3,04,50,1,5]
+console.log(max(num))
+
+
+7.count frequency
+
+const freq=(phrase)=>
+{
+	//make a 'frequency' object{}
+	let frequency={}
+	for(const letter of phrase)
+	{
+	//check if letter exist in frequency
+	if(letter in frequency){
+	//if it's exist then we are going to increment it's value by 1 
+	frequency[letter]=frequency[letter]+1}
+	//otherwise set the value by 1
+	else{
+		frequecy[letter]=1
+		}
+	}
+	return frequency		
+
+}
+
+console.log(freq('haha'))
+
+const wordFrequency = (phrase) => {//phrase r modhye "yo yo honey singh" stored a6e 
+	let frequency={}//object create korlam object pair r moto kaj kore mane key value combination e kaj kore
+	words=phrase.split(' ')//jekhane space pabe split function tar age obdhi cholbe mane words variable r modhye 1 1 ta word stored hbe
+	for(const word of words)//for loop ta chalano h66e
+	{
+		console.log(word)//word ta print h66e
+		if(word in frequency){
+			frequency[word] +=1//word ta age theke thakle tar frequency +1 h66e
+		}
+		else
+		{
+			frequency[word]=1//new word hole tar frequency 1 h66e
+		}
+	}
+	console.log(words)
+	retuen frequency//object akare return kor6e
+}
+console.log(wordFrequency("yo yo honey singh"))
+
+const userInput=prompt('Write your sentence')
+console.log(wordFrequency(userInput))
+
+
+...........................map().............
+[1,2,3,4].map(number => console.log(number))
+let result=[1,2,3,4].map(number=number*2)
+console.log(result)
+map returns in an array
+const doubleMap=(numbers) =>
+{
+	return numbers.map(number=>number*2)
+}
+
+console.log(doubleMap([1,2,5,6]))
+
+.......................filter().................
+filters return an array
+const filter=(numbers,greaterThan)=>
+{
+	let result=[]
+	for(const number of numbers)
+	{
+		if(number>greaterThan)
+		{
+			result.push(number)
+		}
+	}
+	return result
+}
+console.log(filter([1,2,3,4,5,6],3))
+const nums=[1,2,3,4,5,6]
+console.log(nums.filter(num=>num>3))
+const actors=[
+	{name: 'johny' , networth:10000},
+	{name: 'amber' , networth:10},
+	{name: 'leonardo' , networth:100000000}
+]
+console.log(actors.filter(actor=>actor.networth>10))
+.................reduce().......
+const nums=[1,2,3,4]
+const result=nums.reduce(function(prev,curr){
+	return prev+curr
+})
+console.log(result)

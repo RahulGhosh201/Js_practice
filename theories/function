@@ -1,0 +1,54 @@
+1.without argument
+function sayMyName()
+{
+console.log('rahul ghosh')
+}
+sayMyName()//rahul ghosh
+
+
+2.with argument
+let name=prompt('Enter your name:')
+function sayMyName(name)
+{
+console.log(name)
+}
+sayMyName(name)
+
+
+
+3.functiongreeting(name)
+{
+console.log('Hi '+name+',Nice to meet you')  OR greet=`hi ${name},nice to meet you` consol.log(greet)
+}
+greeting(Rahul)//Hi Rahul,Nice to meet you
+
+`${varName}---->it's called string interpolation
+`${varName} generally used console e log korar time e 
+like-
+function greeting(name)
+{
+	greet=`hi ${name},nice to meet you!`
+	console.log(greet)
+}
+
+greeting('Rahul Ghosh')
+
+
+
+function sum(a,b)
+{
+    return a+b
+}
+console.log(sum(1,2))
+num=sum(5,7)
+console.log(num)
+
+function calculateTotal(food,tip)
+{
+    tipPercentage=tip/100
+    tipAmount=food*tipPercentage
+    total=sum(food,tipAmount)
+    return total
+}
+x=calculateTotal(1000,5)
+console.log(`Total amount: ${x}`)

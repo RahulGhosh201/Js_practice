@@ -1,0 +1,42 @@
+1.strings-------'rahul',"rahul"//no diff b/w ' ' & " "
+2.Numbers-------10,2.5
+3.arrays[]
+4.objects{}
+5.boolean--------true/false
+
+	let weather=prompt('How is the weather?')
+	//let weather='rainy'
+	if(weather=='rainy'){
+		console.log('Grab your umbrealla')
+	}else{
+		console.log('Wear your sunglasses')
+}
+
+
+math operators...............
++,-,*,**,/,%
+
+
+
+math methods..........
+Math.floor(110.25)//110//rounds down
+Math.ceil(110.25)//111//rounds up
+Math.random()//gives a decimal number b/w 0 & 1
+Math.random()*3//gives a decimal number b/w 0 & 3
+to turn a random number like 2.72013 into the closest lower integer?//Math.floor(Math.random()*3)///eta randomly 0,1,2 die thakbe 
+//Math.ceil(Math.random()*3)///eta randomly 1,2,3 die thakbe
+
+
+conditional operators...............
+<,>,==,===,<=,>=,!=,!==
+
+
+
+baby weather app....................
+let weather=prompt('How is the weather?')
+	//let weather='rainy'
+	if(weather=='rainy'){
+		console.log('Grab your umbrealla')
+	}else{
+		console.log('Wear your sunglasses')
+	}

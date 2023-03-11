@@ -1,0 +1,14 @@
+console.log(fruits[1]);
+by this we can access the elements of the array one by one but to print out all
+of them at once we have to use the concept of looping
+
+For loop------->
+for(let i=0;i<fruits.length;i++){
+	console.log(fruits[i])
+}//it will print all the elements present in the fruits array
+fruits.length -------->determines the array length 
+......advanced syntax of a for loop
+for(const fruit of fruits)
+{
+ console.log(fruit)
+}//here we don't have to worry about indices inside the for loop
