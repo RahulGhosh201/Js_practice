@@ -1,0 +1,26 @@
+ Asynchronous programming is a piece of code that's going to run in out of order time means suppoese some console.log are doing simontaneously and one promoise is there in between time most probably the promises are going to work after all of those console.log 
+ we can think of it using this example that suppose some friends are eating inside a resturant they ordered their food and talk among themselves meanwhile the food is being prepared and after some time the waiter comes out and give them their food or told them the food is  not available
+
+ //you ordered tomato soup
+ //meanwhile you continue your convo with a friends
+ //RESOLVED - your server brings you soup
+ //REJECTED - No soup today
+
+
+ //fetch requests,API requests are example of Asynchronous code
+
+
+// isReady ? console.log('Soup is ready'):console.log('No soup today')
+// ...........OR............
+// if(isReady)
+// {
+//     'Soup is ready'
+// }else{
+//     'No soup today'
+// }
+
+//resolve works when thw condition matches
+//reject works when the condition does not match
+
+//.then() => when the promise resolves then we can call .then() to get the promise's resolve value
+//.catch() when the promise rejects then we can call .catch() to get the promise's reject value
